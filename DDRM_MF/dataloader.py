@@ -64,7 +64,6 @@ class BasicDataset(Dataset):
         raise NotImplementedError
 
 class DiffData(BasicDataset):
-
     def __init__(self, config=world.config, path=None):
         # train or test
         print(f'loading [{path}]')
@@ -82,7 +81,7 @@ class DiffData(BasicDataset):
         self.path = path
         trainUniqueUsers, trainItem, trainUser = [], [], []
         validUniqueUsers, validItem, validUser = [], [], []
-        testUniqueUsers, testItem, testUser = [], []
+        testUniqueUsers, testItem, testUser = [], [], []
         self.traindataSize = 0
         self.validDataSize = 0
         self.testDataSize = 0
