@@ -9,7 +9,7 @@ import re
 
 dataset = 'ml-1m'
 log_path = './log/'
-ckpt_path = './code/checkpoints/'
+ckpt_path = './pretrain_checkpoint/'
 data_path = '../data/ml-1m'
 epoch_num = 1000
 
